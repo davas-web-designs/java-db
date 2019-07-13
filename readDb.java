@@ -1,7 +1,7 @@
 
 import java.sql.*;
 
-public class db{
+public class readDb{
     public static void main(String[] args){
 
 	try{
@@ -23,3 +23,5 @@ public class db{
 	}
     }
 }
+
+
