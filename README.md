@@ -8,3 +8,11 @@
 4. Get and read the results of the query
 
 It was quite complicated to get this thing running specially when considering that I am not useing an ide or something of a kind, just "plain console" as I read somewhere...I say it because in order to get this running it is necesary a JDBC driver that was also a mess to get working in my os. But other than these configuration details..xD...the code is pretty easy so lets see where can we get.
+
+In my case, to be able to run it, I open a console in the directory of my java app and do:
+
+```
+java -cp .:/usr/share/java/mysql-connector-java-8.0.16.jar classname
+```
+
+notice that the mysql-connector-java-8.0.16.jar needs to be downloaded and may vary between distros
