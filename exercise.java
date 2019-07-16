@@ -102,14 +102,14 @@ class dbConnection{
 		int number = Integer.parseInt(n);
 		
 		try{
-			PreparedStatement s = c.prepareStatement("SELECT * FROM employees WHERE emp_no = ?");
+			PreparedStatement s = c.prepareStatement("SELECT first_name ,dept_name FROM employees as a INNER JOIN current_dept_emp as b ON a.emp_no=b.emp_no INNER JOIN departments as c ON b.dept_no=c.dept_no WHERE a.emp_no = ?");
 			
 			s.setInt(1,number);
 
 			ResultSet r = s.executeQuery();
 
 			while(r.next()){
-				 System.out.println("My name is: " + r.getString("first_name"));
+				 System.out.println("My name is: " + r.getString("first_name") + " and I work in the: " + r.getString("dept_name") + " department");
 			}
 
 			r.close();
