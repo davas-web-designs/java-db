@@ -11,6 +11,7 @@ In the *exercise* program, which is the most "advanced" of all I am building an 
 
 The DB I choose is the employees db example that MYSQL provides , and can be found here:
 
+https://dev.mysql.com/doc/employee/en/
 
 It was quite complicated to get this thing running specially when considering that I am not useing an ide or something of a kind, just "plain console" as I read somewhere...I say it because in order to get this running it is necesary a JDBC driver that was also a mess to get working in my os. But other than these configuration details..xD...the code is pretty easy so lets see where can we get.
 
